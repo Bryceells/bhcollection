@@ -13,3 +13,6 @@ Thumbs.db
 
 # Env files or other secrets
 .env
+
+libraries
+src
