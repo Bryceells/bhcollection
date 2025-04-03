@@ -1,0 +1,15 @@
+# Ignore Python virtual environments
+**/.venv/
+__pycache__/
+
+# IntelliJ and Java build files
+.idea/
+*.iml
+out/
+
+# Mac/Windows system files
+.DS_Store
+Thumbs.db
+
+# Env files or other secrets
+.env
