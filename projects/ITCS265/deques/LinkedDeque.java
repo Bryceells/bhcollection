@@ -34,7 +34,7 @@ public class LinkedDeque<E> implements Deque<E> {
     @Override
     public void addFirst(E element) {
         size += 1;
-        // TODO: ß
+        // TODO: ß Code written by Bryce
         Node<E> newNode = new Node<>(element, front, front.next);
         front.next.prev = newNode;
         front.next = newNode;
@@ -43,7 +43,7 @@ public class LinkedDeque<E> implements Deque<E> {
     @Override
     public void addLast(E element) {
         size += 1;
-        // TODO: ß
+        // TODO: ß Code written by Bryce
         Node<E> newNode = new Node<>(element, back.prev, back);
         back.prev.next = newNode;
         back.prev = newNode;
@@ -55,7 +55,7 @@ public class LinkedDeque<E> implements Deque<E> {
             return null;
         }
         size -= 1;
-        // TODO: ß
+        // TODO: ß Code written by Bryce
         Node<E> first = front.next;
         front.next = first.next;
         first.next.prev = front;
@@ -73,7 +73,7 @@ public class LinkedDeque<E> implements Deque<E> {
             return null;
         }
         size -= 1;
-        // TODO: ß
+        // TODO: ß Code written by Bryce
         Node<E> last = back.prev;
         back.prev = last.prev;
         last.prev.next = back;
