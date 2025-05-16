@@ -24,7 +24,7 @@ public class TernarySearchTreeAutocomplete implements Autocomplete {
 
     @Override
     public void addAll(Collection<? extends CharSequence> terms) {
-        // TODO: ß
+        // TODO: ß Code written by Bryce
         for (CharSequence term : terms) {
             if (term != null && term.length() > 0) {
                 overallRoot = insert(overallRoot, term, 0);
@@ -34,7 +34,7 @@ public class TernarySearchTreeAutocomplete implements Autocomplete {
 
     @Override
     public List<CharSequence> allMatches(CharSequence prefix) {
-        // TODO: ß
+        // TODO: ß Code written by Bryce, including insert, getNode, and collect.
         List<CharSequence> results = new ArrayList<>();
         if (prefix == null || prefix.length() == 0) return results;
 

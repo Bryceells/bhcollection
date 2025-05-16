@@ -26,14 +26,14 @@ public class BinarySearchAutocomplete implements Autocomplete {
 
     @Override
     public void addAll(Collection<? extends CharSequence> terms) {
-        // TODO: ß
+        // TODO: ß Code written by Bryce
         elements.addAll(terms);
         elements.sort(Comparator.comparing(CharSequence::toString));
     }
 
     @Override
     public List<CharSequence> allMatches(CharSequence prefix) {
-        // TODO: ß
+        // TODO: ß Code written by Bryce
         List<CharSequence> result = new ArrayList<>();
         if (prefix == null || prefix.length() == 0) return result;
 
